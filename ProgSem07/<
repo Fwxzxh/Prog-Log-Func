@@ -1,0 +1,22 @@
+import numpy as np
+from itertools import permutations
+
+def Fill():
+    N = int(input("ingrese las dimenciones de la matriz, recuerede que la matriz es NxN"))
+    Mat = np.empty((N,N))
+    print("ingrese la matriz elemento por elemento")
+    for i in range(0,N):
+        for j in range(0,N):
+            Mat[i,j] = int(input())
+    P = list(permutations(range(1,N+1)))
+    return Mat,P
+
+def Det(Mat,P):
+    print(Mat(:,2))
+
+#generar permutaciónes con del 1 a n, siendo una matriz de nxn
+#Hacer la permutación de signos 
+#hacer los productos y las sumas
+if __name__ == "__main__":
+    Det(Fill())
+

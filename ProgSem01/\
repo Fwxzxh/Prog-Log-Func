@@ -1,0 +1,36 @@
+def Sintax(cadena):
+    if len(cadena)%2 == 0:
+        raise Exception("Error: expresión par")
+    else:
+        Stack(cadena)
+
+def Stack(cadena):
+    variables = []
+    expresiones = []
+    for i in range(len(cadena)):
+        if i%2 == 0:        #TODO optimizar esto
+            variables.append(cadena[i])
+        else:
+            expresiones.append(cadena[i])
+    evaluacion(variables,expresiones)
+
+def evaluacion(variables,expresiones):
+    num_Var = len(variables)
+    table = []
+    while len(table) <= num_Var:
+        table.append([0]*(2**num_Var)) #O(n) BAD,BAD!!!!
+    matix(table,variables)
+
+def matix(table, variables):
+    unos = int(len(table[0])/2)#num de unos que debe de tener
+    for ivar in range(len(variables)):#iteramos sobre el indice de cada columna
+        for i in range(len(table[ivar])):#iteramos dentro de la columna
+            while cx<=unos/2:#mien
+            fill()
+
+
+if __name__ == "__main__":
+    exp = input("Ingrese la expreción\n")
+    Sintax(exp)
+    print()
+

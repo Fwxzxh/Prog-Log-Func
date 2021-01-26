@@ -1,0 +1,4 @@
+[ir,voy,vas,va,vamos,van,van].
+[ser,soy,eres,es,somos,son,son].
+
+[volar,vuelo,vuelas,vuelan,volamos,vuelan].
